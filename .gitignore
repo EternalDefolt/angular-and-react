@@ -3,3 +3,10 @@ dist
 .vite
 *.log
 .DS_Store
+bin/
+obj/
+HybridApp.Server/wwwroot/react/
+HybridApp.Server/wwwroot/angular/
+.angular/
+*.user
+.vs/

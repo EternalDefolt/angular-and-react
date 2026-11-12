@@ -1,0 +1,20 @@
+<div class="layout">
+  <header class="header">
+    <div class="grow">
+      <h1><span class="tag tag--angular">Angular</span> HybridApp</h1>
+      <p class="muted">Общий бэкенд ASP.NET Core и общая кука SharedAuth</p>
+    </div>
+    <a [href]="reactUrl">Открыть React →</a>
+  </header>
+
+  @if (auth.user(); as user) {
+    <div class="card row">
+      <span class="grow">
+        Вы вошли как <b>{{ user.displayName }}</b> ({{ user.userName }}, {{ user.role }})
+      </span>
+      <button (click)="logout()">Выйти</button>
+    </div>
+  }
+
+  <router-outlet />
+</div>
