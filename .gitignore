@@ -10,3 +10,7 @@ HybridApp.Server/wwwroot/angular/
 .angular/
 *.user
 .vs/
+*.exe
+*.obj
+*.pdb
+*.ilk
